@@ -1,0 +1,28 @@
+
+pipeline {
+    agent any
+    stages {
+        stage('Compile') {
+            steps {
+                withMaven(maven : 'maven-3.5.3' ) {
+                    sh 'mvn clean compile -pl ch010_junit -am'
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                withMaven(maven : 'maven-3.5.3' ) {
+                    sh 'mvn test -pl ch010_junit -am'
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                withMaven(maven : 'maven-3.5.3' ) {
+                    sh 'mvn deploy -pl ch010_junit -am'
+                }
+
+            }
+        }
+    }
+}

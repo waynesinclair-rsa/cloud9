@@ -16,6 +16,7 @@
         <module>ch035_rest</module>
         <module>ch070_jmeter</module>
         <module>ch090_appium</module>
+        <module>toolbox</module>
     </modules>
 
     <name>training</name>
