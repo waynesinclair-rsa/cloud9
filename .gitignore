@@ -1,0 +1,14 @@
+build
+.gradle
+.idea
+lib
+target
+*.iml
+*.log
+*.bak
+out
+.DS_Store
+/serenity-core.ipr
+/serenity-core.iws
+.okhttpcache
+/target
