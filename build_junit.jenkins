@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 withMaven(maven : 'maven-3.5.3' ) {
-                    sh 'mvn deploy -pl ch010_junit -am'
+                    sh 'mvn install -pl ch010_junit -am'
                 }
 
             }
