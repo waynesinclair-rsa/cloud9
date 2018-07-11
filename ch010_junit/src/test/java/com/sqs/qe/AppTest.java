@@ -1,19 +1,15 @@
 package com.sqs.qe;
 
+// http://thucydides.info/docs/articles/an-introduction-to-serenity-bdd-with-junit.html
+
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
+public class AppTest
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void basicJUnitTest()
     {
         assertTrue( true );
     }

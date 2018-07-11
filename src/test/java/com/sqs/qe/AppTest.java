@@ -3,18 +3,16 @@ package com.sqs.qe;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
+public class AppTest
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
     public void shouldAnswerWithTrue()
     {
+        System.out.println("Hello World");
         assertTrue( true );
     }
+
 }
+
