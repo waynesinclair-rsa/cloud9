@@ -27,13 +27,13 @@ public class commentsStepDefs {
         newObject.addProperty("body", arg1);
         newObject.addProperty("postId", arg0);
         requestSpecification = requestSpecification.body(newObject).when();
-        requestSpecification.post("http://sandbox-lt:3000/comments");
+        requestSpecification.post("http://10.9.10.117:3000/comments");
     }
 
     @When("^I post a delete request for id (\\d+)$")
     public void iPostADeleteRequestForId(int arg0) throws Throwable {
         requestSpecification.when()
-                .delete("http://sandbox-lt:3000/comments/{id}", arg0);
+                .delete("http://10.9.10.117:3000/comments/{id}", arg0);
     }
 
     @Then("^The response should be (\\d+)$")
